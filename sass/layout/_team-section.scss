@@ -1,8 +1,8 @@
-.team {
+.section {
     background-color: #F5F4FA;
 }
 
-.team-list__name {
+.team-list__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -12,7 +12,7 @@
     margin-bottom: 10px;
 }
 
-.team-list__post {
+.team-list__text {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
@@ -30,7 +30,7 @@
         margin-right: 30px;
 }}
 
-.team-item-box {
+.team-item__box {
     padding-top: 30px;
     padding-bottom: 30px;
 }

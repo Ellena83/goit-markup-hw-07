@@ -16,7 +16,8 @@
   white-space: nowrap;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 body {
@@ -304,6 +305,20 @@ ol {
   padding: 12px 16px;
   margin-bottom: 20px;
 }
+.contact-form-text::-moz-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+.contact-form-text:-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
 .contact-form-text::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-weight: 400;
@@ -546,11 +561,11 @@ img {
   padding-bottom: 30px;
 }
 
-.section {
+.team {
   background-color: #F5F4FA;
 }
 
-.team-list__title {
+.team-list__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -560,7 +575,7 @@ img {
   margin-bottom: 10px;
 }
 
-.team-list__text {
+.team-list__post {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -578,7 +593,7 @@ img {
   margin-right: 30px;
 }
 
-.team-item__box {
+.team-item-box {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -723,6 +738,18 @@ img {
   background-color: transparent;
   color: var(--secondary-text-color);
 }
+.subscribe-input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
 .subscribe-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -847,7 +874,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.ready-projects__wrapper {
+.projects-list-wrapper {
   position: relative;
   overflow: hidden;
 }
